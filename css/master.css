@@ -20,9 +20,9 @@ header {
 }
 
 .my-btn-upgrade {
+  background-color: none;
   border: 1px solid #fff;
   color: #fff;
-  background-color: none;
 }
 
 main {
