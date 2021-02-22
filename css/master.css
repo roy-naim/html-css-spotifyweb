@@ -13,9 +13,16 @@ header {
   width: calc(100vw - 330px)
 }
 
-.row-top {
+.upgrade {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+}
+
+.my-btn-upgrade {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: none;
 }
 
 main {
