@@ -13,6 +13,11 @@ header {
   width: calc(100vw - 330px)
 }
 
+.row-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
 main {
   background-color: #141922; /*dark grey color*/
   height: calc(100vh -  110px);
