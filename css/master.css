@@ -46,10 +46,11 @@ footer {
 }
 
 aside {
-  float: left;
   background-color: pink;
   width: 330px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .spotify-logo img {
@@ -58,6 +59,15 @@ aside {
 
 .home {
   display: inline;
+}
+
+.install {
+  margin-top: auto; /*si prende tutto lo spazio superiore alla div*/
+}
+.install-line {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
 
 div[role="app-content"] {
