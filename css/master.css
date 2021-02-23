@@ -50,6 +50,8 @@ aside {
   color: #717171; /*grey text aside*/
   width: 330px;
   height: 100%;
+  padding-left: 20px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -62,6 +64,10 @@ aside {
   display: inline;
 }
 
+.playlist li {
+  list-style: none;
+}
+
 .install {
   margin-top: auto; /*si prende tutto lo spazio superiore alla div*/
 }
@@ -69,6 +75,7 @@ aside {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 20px;
+  border: 1px solid  #717171; /*grey text aside*/
 }
 
 div[role="app-content"] {
@@ -97,4 +104,16 @@ section {
   width: 50px;
   height: 50px;
   padding: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer [class$='-ft'] {
+  height: 50px;
+  width: 100%;
+  background-color: purple;
+  margin: 0 15px;
 }
