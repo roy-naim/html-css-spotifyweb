@@ -100,13 +100,27 @@ section {
   margin-top: 80px;
 }
 
+.album-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .album {
-  width: 180px;
+  width: calc(100%/6 - 20px);
   /* height: 100%; */
-  padding: 10px;
-  margin-right: 10px;
+  /* padding: 10px; */
+  margin: 10px;
   background-color: cyan;
-  display: inline-block;
+  text-align: center;
+}
+
+.album img {
+  width: 100%;
+}
+
+.album h3 {
+  text-align: center;
+  margin: 15px;
 }
 
 .images-4 {
@@ -115,9 +129,9 @@ section {
 }
 
 .images-4 img {
-  width: 100px;
-  height: 100%;
+  width: calc(100%/2);
 }
+
 footer {
   display: flex;
   justify-content: space-between;
