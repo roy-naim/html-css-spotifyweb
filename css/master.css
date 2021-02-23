@@ -147,7 +147,7 @@ section {
 }
 
 footer [class$='-ft'] {
-  height: 50px;
+  /* height: 50px; */
   width: 100%;
   background-color: purple;
   margin: 0 15px;
@@ -156,9 +156,14 @@ footer [class$='-ft'] {
 .left-ft {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
+.small-left {
+  display: flex;
+  align-items: center;
+}
 .small-image img {
-  width: 100%;
+  width: 100px;
+  height: auto;
 }
