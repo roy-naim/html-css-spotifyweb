@@ -150,20 +150,82 @@ footer [class$='-ft'] {
   /* height: 50px; */
   width: 100%;
   background-color: purple;
+  color: #fff;
   margin: 0 15px;
 }
 
 .left-ft {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
 .small-left {
   display: flex;
   align-items: center;
+  margin-right: 20px;
 }
+
+.small-image {
+  padding-right: 15px;
+}
+
 .small-image img {
-  width: 100px;
+  width: 60px;
   height: auto;
+}
+
+.center-ft {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: magenta;
+  height: 100%;
+}
+
+.controls ul li {
+  display: inline;
+  list-style: none;
+  vertical-align: middle;
+  padding: 0 5px;
+}
+
+.fa-play-circle {
+  font-size: 35px;
+  margin: 0 10px;
+}
+.input-music {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: blue;
+  height: 100%;
+}
+
+.input-music ul li {
+  display: inline;
+  list-style: none;
+  vertical-align: middle;
+  padding: 0 5px;
+}
+
+#mini-list {
+  font-size: 30px;
+}
+
+.right-ft {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.right-ft ul li {
+  display: inline;
+  list-style: none;
+  vertical-align: middle;
+  padding: 0 5px;
 }
