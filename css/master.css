@@ -72,6 +72,15 @@ aside {
   font-weight: 700;
 }
 
+.three-buttons a {
+  text-decoration: none;
+  color: #717171;
+}
+
+.three-buttons a:hover {
+  color: #fff;
+}
+
 .playlist h3 {
   color: #fff;
   font-weight: bold;
@@ -83,6 +92,15 @@ aside {
   font-weight: 700;
 }
 
+.playlist a {
+  text-decoration: none;
+  color: #717171;
+}
+
+.playlist a:hover {
+  color: #fff;
+}
+
 .fa-plus-square {
   font-size: 45px;
   margin-right: 10px;
@@ -91,6 +109,15 @@ aside {
 
 .install {
   margin-top: auto; /*si prende tutto lo spazio superiore alla div*/
+}
+
+.install a {
+  text-decoration: none;
+  color: #717171;
+}
+
+.install a:hover {
+  color: #fff;
 }
 
 .fa-arrow-circle-down {
@@ -141,10 +168,18 @@ nav ul li {
   padding: 20px;
 }
 
+.green-line {
+  border-bottom: 1px solid #adff2f;
+  padding-bottom: 5px;
+}
+
 nav a {
   text-decoration: none;
   color: #7d7f84;
+}
 
+nav a:hover {
+  color: #fff;
 }
 
 .recent-music {   /*per mettere sotto la barra principale*/
@@ -211,11 +246,6 @@ footer [class$='-ft'] {
   margin-right: 20px;
 }
 
-.small-right {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-}
 .small-image {
   padding-right: 15px;
 }
@@ -223,6 +253,30 @@ footer [class$='-ft'] {
 .small-image img {
   width: 60px;
   height: auto;
+}
+
+.small-text h6 {
+  font-size: 15px;
+}
+.small-left p {
+  font-size: 12px;
+  color: #7d7f84;
+}
+
+.small-right {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.small-right a {
+  text-decoration: none;
+  color: #7d7f84;
+}
+
+.small-right a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 .center-ft {
@@ -334,6 +388,7 @@ input[type="range"]::-ms-fill-upper {
     width: calc(100%/4 - 20px);
   }
   .small-right {
+    display: flex;
     width: 100%;
   }
 }
