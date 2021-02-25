@@ -23,24 +23,22 @@
     <aside>
       <div class="spotify-logo">
         <img src="./img/logo-esteso.png" alt="logo">
+        <!-- <img class="appear-xs" src="" alt=""> -->
       </div>
 
-      <div class="home">
-        <h4><svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg>Home</h4>
-      </div>
-
-      <div class="cerca">
-        <h4><svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path></svg>Cerca</h4>
-      </div>
-
-      <div class="libreria">
-        <h4><svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path></svg>La tua libreria</h4>
+      <div class="three-buttons">
+        <ul>
+          <li><h4><svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg>Home</h4></li>
+          <li><h4><svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path></svg>Cerca</h4>
+          </li>
+          <li><h4><svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path></svg>La tua libreria</h4></li>
+        </ul>
       </div>
 
       <div class="playlist">
-        <h3>Playlist</h3>
+        <h3>PLAYLIST</h3>
         <ul>
-          <li>Nome Playlist</li>
+          <li><i class="fas fa-plus-square"></i>Crea Playlist</li>
           <li>Nome Playlist</li>
           <li>Nome Playlist</li>
           <li>Nome Playlist</li>
@@ -59,6 +57,17 @@
     </aside>
 
     <div role="app-content">
+      <nav>
+        <ul>
+          <li><a href="">IN EVIDENZA</a></li>
+          <li><a href="">PODCAST</a></li>
+          <li><a href="">CLASSIFICHE</a></li>
+          <li><a href="">GENERI E MOOD</a></li>
+          <li><a href="">NUOVE USCITE</a></li>
+          <li><a href="">SCOPRI</a></li>
+
+        </ul>
+      </nav>
       <section class="recent-music">
         <!-- proviamo qua la navbar -->
         <h2>Recently played</h2>
@@ -190,6 +199,7 @@
         <li><svg id="mini-list"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M2 16h8v-2H2m16 0v-4h-2v4h-4v2h4v4h2v-4h4v-2m-8-8H2v2h12m0 2H2v2h12v-2z" fill="#fff"/></svg></li>
         <li><i class="fas fa-tv"></i></li>
         <li><i class="fas fa-volume-up"></i></li>
+        <li><input type="range" id="volume" min="0" max="50"></li>
 
       </ul>
   </footer>

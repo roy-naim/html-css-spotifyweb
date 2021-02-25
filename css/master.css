@@ -58,21 +58,50 @@ aside {
   flex-direction: column;
 }
 
+.spotify-logo {
+  margin-bottom: 5px;
+}
+
 .spotify-logo img {
   width: 50%;
 }
 
-.home {
-  display: inline;
+.three-buttons li {
+  list-style: none;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.playlist h3 {
+  color: #fff;
+  font-weight: bold;
 }
 
 .playlist li {
   list-style: none;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.fa-plus-square {
+  font-size: 45px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .install {
   margin-top: auto; /*si prende tutto lo spazio superiore alla div*/
 }
+
+.fa-arrow-circle-down {
+  padding-right: 15px;
+}
+
+.fa-user-circle {
+  font-size: 30px;
+  padding-right: 15px;
+}
+
 .install-line {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -101,9 +130,25 @@ section {
   /* background-color: green; */
 }
 
+nav {
+  text-align: center;
+  margin-top: 100px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #7d7f84;
+
+}
 
 .recent-music {   /*per mettere sotto la barra principale*/
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .album-container {
@@ -148,8 +193,8 @@ section {
 
 footer [class$='-ft'] {
   /* height: 50px; */
-  width: 100%;
-  background-color: purple;
+  /* width: 100%; */
+  /* background-color: purple; */
   color: #fff;
   margin: 0 15px;
 }
@@ -184,7 +229,7 @@ footer [class$='-ft'] {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: magenta;
+  /* background-color: magenta; */
   height: 100%;
 }
 
@@ -197,13 +242,14 @@ footer [class$='-ft'] {
 
 .fa-play-circle {
   font-size: 35px;
-  margin: 0 10px;
+  padding: 15px;
+  margin-bottom: 0;
 }
 .input-music {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  background-color: blue;
+  align-items: flex-start;
+  /* background-color: blue; */
   height: 100%;
 }
 
@@ -218,25 +264,27 @@ footer [class$='-ft'] {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     input[type='range'] {
       overflow: hidden;
-      width: 280px;
+      width: 500px;
+      height: 5px;
       -webkit-appearance: none;
-      /* background-color: #9a905d; */
+      border-radius: 5px;
+      background-color: #5a5a5a;
     }
 
     input[type='range']::-webkit-slider-runnable-track {
-      height: 10px;
+      height: 5px;
       -webkit-appearance: none;
       color: #13bba4;
       margin-top: -1px;
     }
 
     input[type='range']::-webkit-slider-thumb {
-      width: 10px;
+      width: 1px;
       -webkit-appearance: none;
-      height: 10px;
+      height: 1px;
       cursor: ew-resize;
-      background: #434343;
-      box-shadow: -80px 0 0 80px #43e5f7;
+      background: #5a5a5a;
+      box-shadow: -500px 0 0 500px #c1c1c1;
     }
 
 }
@@ -255,6 +303,11 @@ input[type="range"]::-ms-fill-upper {
   /* background-color: #9a905d; */
 }
 
+#volume {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
 #mini-list {
   font-size: 30px;
 }
@@ -269,4 +322,16 @@ input[type="range"]::-ms-fill-upper {
   list-style: none;
   vertical-align: middle;
   padding: 0 5px;
+}
+
+@media screen and (max-width: 1190px) {
+  .album {
+    width: calc(100%/4 - 20px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .album {
+    width: calc(100%/2 - 20px);
+  }
 }
