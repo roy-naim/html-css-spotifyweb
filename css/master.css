@@ -211,6 +211,11 @@ footer [class$='-ft'] {
   margin-right: 20px;
 }
 
+.small-right {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
 .small-image {
   padding-right: 15px;
 }
@@ -327,6 +332,9 @@ input[type="range"]::-ms-fill-upper {
 @media screen and (max-width: 1190px) {
   .album {
     width: calc(100%/4 - 20px);
+  }
+  .small-right {
+    width: 100%;
   }
 }
 
